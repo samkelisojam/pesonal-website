@@ -1880,3 +1880,85 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+/*-----------------------------------*\
+  #PROJECTS
+\*-----------------------------------*/
+
+.projects { margin-bottom: 35px; }
+
+.projects .article-title {
+  margin-bottom: 20px;
+}
+
+/* Optional intro text (if any) */
+.projects-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Grid for project list (ongoing/completed/etc.) */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Each project item */
+.project-item {
+  background: var(--border-gradient-onyx);
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.project-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.project-item-title {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
+  margin-bottom: 10px;
+  color: var(--white-1);
+}
+
+.project-category {
+  font-size: var(--fs-7);
+  color: var(--vegas-gold);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.project-description {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+/* Optional tags or status label */
+.project-tags {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tag {
+  background: var(--bg-gradient-onyx);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: var(--fs-8);
+  color: var(--white-2);
+  box-shadow: var(--shadow-1);
+}
